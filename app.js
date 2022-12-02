@@ -112,3 +112,5 @@ function isLoggedInAndSubscribed(loggedIn, subscribed) {
 }
 
 console.log(isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
+
+Beginner challenges
