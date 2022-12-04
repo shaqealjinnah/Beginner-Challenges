@@ -114,3 +114,41 @@ function isLoggedInAndSubscribed(loggedIn, subscribed) {
 console.log(isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
 
 // Medium challenges
+
+// Q1. Given two values, return the first one if it is false, otherwise return the second one.
+
+function filterOutFalse(elem1, elem2) {
+    return !elem1 ? elem1 : elem2;
+}
+
+console.log(filterOutFalse(null, 500))
+
+
+// Q2. Return the length of any given array
+
+function arrLength(arr) {
+    return arr.length;
+}
+
+console.log(arrLength([3]));
+
+
+// Q3. Given an array, return the first element.
+
+function lastElem(elem) {
+    return elem[elem.length - 1];
+}
+
+console.log(lastElem(['dog', 'cat', 'tomato']))
+
+// Q4. Find the sum of an array
+
+function arrSum(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; ++i) {
+        sum = sum + arr[i];
+    }
+    return sum;
+}
+
+console.log(arrSum([1, 2, 3]));
