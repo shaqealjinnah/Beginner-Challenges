@@ -152,3 +152,63 @@ function arrSum(arr) {
 }
 
 console.log(arrSum([1, 2, 3]));
+
+
+// Q5. Given a number, add up all the numbers from one to the number that is given. E.g. An input of 4 will give you 1 + 2 + 3 + 4, which equals 10.
+
+function progressiveSum(num) {
+    let sum = 0
+    for (i = 1; i <= num; ++i) {
+        sum = sum + i;
+        console.log(i)
+    }
+    return sum;
+}
+
+console.log(progressiveSum(3));
+
+
+// Q6. Given a number in hoursIntoSeconds, return the number in mm:ss format.
+
+function calcTime(seconds) {
+    let timerMinutes = Math.floor(seconds / 60)
+    let timerSeconds = seconds % 60
+
+    if (timerMinutes.toString().length === 1) {
+        timerMinutes = "0" + timerMinutes
+    }
+
+    return timerMinutes + ":" + timerSeconds
+
+}
+
+console.log(calcTime(50))
+
+
+// Q7. Given an array of numbers, return the largest number of that array
+
+function getMax(numero) {
+    let max = numero[0]
+    for (i = 0; i < numero.length; i++) {
+        console.log(i)
+        if (numero[i] > max) {
+            max = numero[i];
+        }
+    }
+    return max;
+}
+
+console.log(getMax([12, 19, -20]))
+
+
+// Q8. Given a string, return the reversed string
+
+function reverseString(string) {
+    let reverse = "";
+    for (i = 0; i < string.length; ++i) {
+        reverse = string[i] + reverse;
+    }
+    return reverse;
+}
+
+console.log(reverseString('abc'))
