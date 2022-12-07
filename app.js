@@ -212,3 +212,50 @@ function reverseString(string) {
 }
 
 console.log(reverseString('abc'))
+
+
+// Q9. Given an array of elements, return the same length array filled with 0's.
+
+function convertToZeros(zero) {
+    return zero.map(elem => 0);
+}
+
+console.log(convertToZeros([5, 100, -5]))
+
+
+// Q10. Filter out all the apples
+
+// function filterOutFalsy(arr) {
+//     return arr.filter(elem => !!elem === true)
+// }
+
+// console.log(filterOutFalsy(["", [], 0, null, "0", 7]))
+
+function filterOutFalsy(arr) {
+    let truthyArray = []
+    for (i = 0; i < arr.length; i++) {
+        console.log(arr[i])
+        if (!!arr[i] === true) {
+            truthyArray.push(arr[i])
+        }
+    }
+    return truthyArray;
+}
+
+console.log(filterOutFalsy(["", [], 0, null, "0", 7]))
+
+
+// Q11. Given an array of values, filter out all the falsy values and only return the truthy values.
+
+function filterOutTruthy(arr) {
+    let falsyValue = []
+    for (i = 0; i < arr.length; i++) {
+        if (!!arr[i] === false) {
+            falsyValue.push(arr[i])
+        }
+    }
+    return falsyValue;
+}
+
+console.log(filterOutTruthy(["", [], 0, null, undefined, "0", 5]))
+
