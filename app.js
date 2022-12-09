@@ -259,3 +259,5 @@ function filterOutTruthy(arr) {
 
 console.log(filterOutTruthy(["", [], 0, null, undefined, "0", 5]))
 
+
+Q11.
