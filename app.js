@@ -260,4 +260,4 @@ function filterOutTruthy(arr) {
 console.log(filterOutTruthy(["", [], 0, null, undefined, "0", 5]))
 
 
-Q11.
+Q11. Given an array of values, filter out all the falsy values and only return the truthy values.
