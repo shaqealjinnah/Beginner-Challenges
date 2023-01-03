@@ -223,13 +223,13 @@ function convertToZeros(zero) {
 console.log(convertToZeros([5, 100, -5]))
 
 
-// Q10. Filter out all the apples
+Q10. Filter out all the apples
 
-// function filterOutFalsy(arr) {
-//     return arr.filter(elem => !!elem === true)
-// }
+function filterOutFalsy(arr) {
+    return arr.filter(elem => !!elem === true)
+}
 
-// console.log(filterOutFalsy(["", [], 0, null, "0", 7]))
+console.log(filterOutFalsy(["", [], 0, null, "0", 7]))
 
 function filterOutFalsy(arr) {
     let truthyArray = []
@@ -259,4 +259,4 @@ function filterOutTruthy(arr) {
 
 console.log(filterOutTruthy(["", [], 0, null, undefined, "0", 5]))
 
-Q12. 
+Q12. Given an array of truthy and falsy CSSFontPaletteValuesRule, return the same array of elements into its boolean value.
